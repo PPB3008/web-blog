@@ -16,43 +16,151 @@ font-family: 微软雅黑;
     background-color: white;
 }
 
-.nav ul li{
-    margin:0;
+.nav>ul{
+    margin:  0 1rem;
     padding:0;
-}
-.nav ul{
     float: left;
 }
 
-.select{
-   background-color: blue;
-   color: white;
+.nav img{
+    float: left;
+    margin: .5rem 0;
 }
 
-.nav li{
+
+
+.nav ul li{
    display: inline-block;  
 }
 
+.nav>ul>li+li{
+   border-left: 1px solid gray;
+   margin-left: -.4rem;
+}
 
-.nav a{
+.select{
+   padding: 1rem .3rem;
+   color:white;
+   background-color: blue;
+}
+
+.nav>ul a{
    text-decoration: none;
    color:gray;
-   padding: 0 .3rem;
-   margin:1rem 0;
+   padding: 1rem 1rem;
+   
+   line-height: 130%;
 }
 
 .user{
     float: right;
-
 }
 
-.highLight{
-   display: inline-block;
-   background-color: red;
-   padding-left: 0;
-   padding-right: 0;
-   width: 1.5rem;
-   height: 1.5rem;
-   margin: 1rem 0;
-   border-radius: 20px;
+.user::after{
+   display: block;
+   content: "";
+   clear: both;
+}
+
+.user a{
+   background-image: url("../img/school_logo.png");
+   display: block;
+   padding: 1rem;
+   border-radius: 1rem;
+   margin: 1rem 1.5rem .5rem .5rem;
+}
+
+.user ul{
+    padding:0;
+    margin: 0;
+}
+
+
+.bar{
+    background-image: url("../img/IMG_0676.JPG");
+    width: 100%;
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg{
+    width: 100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+}
+
+
+.left-bar{
+    float: left;
+}
+
+.title{
+   
+   width:100%;
+   margin:3rem 0 0 3rem;
+   border: 1px solid transparent;
+}
+.title h1{
+   color: white;
+   font-weight: 400;
+}
+
+.title span{
+    color: gray;
+}
+
+
+.right_bar{
+    float: right;
+    color: grey;
+}
+
+.right_bar span{
+    display: block;
+   line-height: 200%;
+   border-bottom: 3px solid grey;
+   padding-bottom:.5em; 
+   margin-bottom:1.5em; 
+   font-weight: bold;
+}
+
+.right_bar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.right_bar li{
+    list-style: none;
+}
+
+.right_bar a{
+    font-weight: bold;
+    padding:.5em 0 .5em;
+    float: right;
+    text-decoration: none;
+    color: grey;
+}
+ 
+
+.light{
+    margin-top:26rem;
+    margin-left: 3rem; 
+    height: 3rem;
+}
+
+.light span:nth-child(1){
+    color: white
+}
+
+.light span+span{
+    color: gray;
+}
+
+.blog-title{
+    width: 100%;
+}
+
+.blog-title h2{
+   font-weight:bold;
 }
