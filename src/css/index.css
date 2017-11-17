@@ -96,14 +96,13 @@ font-family: 微软雅黑;
 }
 
 .title{
-   
    width:100%;
    margin:3rem 0 0 3rem;
    border: 1px solid transparent;
 }
 .title h1{
    color: white;
-   font-weight: 400;
+   font-weight: 600;
 }
 
 .title span{
@@ -114,14 +113,15 @@ font-family: 微软雅黑;
 .right_bar{
     float: right;
     color: grey;
+    margin:2rem 2rem 0 0;
 }
 
 .right_bar span{
     display: block;
    line-height: 200%;
    border-bottom: 3px solid grey;
-   padding-bottom:.5em; 
-   margin-bottom:1.5em; 
+   padding-bottom:.5rem; 
+   margin-bottom:1.5rem; 
    font-weight: bold;
 }
 
@@ -136,7 +136,7 @@ font-family: 微软雅黑;
 
 .right_bar a{
     font-weight: bold;
-    padding:.5em 0 .5em;
+    padding:.5rem 0 .5rem;
     float: right;
     text-decoration: none;
     color: grey;
@@ -161,6 +161,96 @@ font-family: 微软雅黑;
     width: 100%;
 }
 
-.blog-title h2{
-   font-weight:bold;
+.blog-title-content{
+   width: 95%;
+   margin: auto;
+}
+
+.blog-title-content h2,.sort{
+    font-weight: 400;
+    display: inline-block;
+}
+
+.blog-title-content h2{
+    margin: 1.4rem 0;
+}
+
+.sort{
+    float: right;
+    margin: 1rem 0;
+}
+
+
+.sort h4{
+    color: grey;
+}
+.sort h4,.blog-title-buttn{
+    display: inline-block;
+    margin-left:2.5rem;
+}
+
+
+.sort input{
+        background-color: white;
+        border: 3px solid blue;
+        border-radius: 1rem;
+        margin-left: .5rem;
+       padding:0 7px;
+    }
+
+.blog{
+    width: 100%;
+    background-color:grey;
+  
+}
+
+.blog-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    margin:auto;
+}
+
+.blog-item{
+    display: inline-block;
+    width: 30%;
+    height: 20rem;
+    background-color:white;
+    margin:2em 0 0 2rem;
+    border-radius: 10px;
+     vertical-align: top;  /*！！*/ 
+    box-shadow: 1.5px 1.5px 5px black;
+    
+}
+
+.blog-item-content{
+    padding: 1em;
+    height: 90%
+}
+.item-light{
+    height: 3rem;
+}
+
+.item-light span:nth-child(1){
+    color: white
+}
+
+.item-light span+span{
+    color: gray;
+}
+
+.blog input{
+     background-color: white;
+     border: 3px solid blue;
+     border-radius: 1rem;
+     margin-left: .5rem;
+     padding:0 7px;
+     float: right;
+}
+
+.blog-item-content h2{
+    color: gray;
+    font-weight: 400;
+    line-height: 30px
 }
