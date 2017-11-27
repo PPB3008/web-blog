@@ -42,13 +42,13 @@ function myaddEvent(element,event,listener){
         
          <h2>${blogObj[i].title}</h2>
          
-         <div class="article-content">
+         <article class="article-content">
          ${blogObj[i].content}
-         </div>
+         </article>
              
          <div class="control">
           <span>${blogObj[i].time}</span>
-          <input type="button">
+          <input class="c-buttn blog-buttn" type="button">
          </div>
          
          <div class="item-light">
@@ -65,12 +65,18 @@ function myaddEvent(element,event,listener){
   }
 }
 
-
-
+function scrollTop(){
+    let upButton=document.getElementsByClassName("up-button");
+    myaddEvent(upButton[0],"click",function(){
+        window.scrollTo(0,0);
+    });   
+}
 
 
 window.onload=function(){
   ArticleOP.textClear();
+  scrollTop();
+  clock();
 }
 
 

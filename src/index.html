@@ -3,35 +3,37 @@
 <head>
    <meta charset="UTF-8">
    <title></title>
-    <link rel="stylesheet" href="css/index.css">
-    
+    <link rel="stylesheet" href="css/index.css">    
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
    
     <nav class="nav">
          <h3>PPB3008's blog</h3>
-         
         <ul>
-            <li><a id="select"href="">Pinboard</a></li>
+            <li><a id="select" href="">Pinboard</a></li>
             <li><a href="">Calender</a></li>
             <li><a href="">Friends</a></li>
-            <li><a href="">Messages</a></li>
+            <li><a href="">Messages<span id="messages">4</span></a></li>
         </ul>
         <div class="user">
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#"></a></li>
+                <li><a id="nav-menu" href="#"></a></li>
             </ul>
         </div>
     </nav>
-    
-    <section class="bar">
 
+    <section class="introduce">
+       
+    </section>
+
+    <section class="bar">
        <div class="bg">
            <div class="left-bar">
-           <div class="title">
+           <div class="bar-title">
+                <span class="glyphicon glyphicon-heart"></span>
                <span>10 023</span>
-               <span class="glyphicon glyphicon-search"></span>
                <h1>Roadtrip on Highway One</h1>
                <span>26 January</span> <span>-</span> <span>29 July</span>
             </div>
@@ -58,39 +60,75 @@
         
     </section>
     
-    <section class="blog-title">
-        <div class="blog-title-content">
-            <h2>Your Blog</h2>
-            <div class="sort">
-                <h4>SORT BY</h4>
-                <div class=blog-title-buttn>
-                  <input type="button">
-                  <input type="button">
-                  <input type="button">
-                  <input type="button">
-                </div>
-            </div>  
-        </div>
-  
-        
-        
-    </section>
-
     <section class="blog">
-       <div class="blog-content">
-
-        
-     
-
-
-
-
-    
-    
-       </div>
+        <div class="title">
+            <div class="title-content">
+                <h2>My Blog</h2>
+                <div class="sort">
+                    <h4>SORT BY</h4>
+                    <div class=title-buttn>
+                      <input class="c-buttn" type="button">
+                      <input class="c-buttn" type="button">
+                      <input class="c-buttn" type="button">
+                      <input class="c-buttn" type="button">
+                    </div>
+                </div>  
+            </div>
+        </div>
+       <div class="blog-content"></div>
     </section>
 
+    <section class="photo">
+        <div class="title">
+            <div class="title-content">
+                <h2>My Photo</h2>
+                <div class="sort">
+                    <h4>SORT BY</h4>
+                    <div class=title-buttn>
+                      <input  class="c-buttn" type="button">
+                      <input  class="c-buttn" type="button">
+                      <input  class="c-buttn" type="button">
+                      <input  class="c-buttn" type="button">
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="photo-content">
+            <div class="photo-show">
+                <div class="photoShow-total">
+                    <div class="photo-roll"></div>
+                    <div class="photo-commit"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="select-menu">
+        <div class="select-menu-content">
+            <div class="s-buttn"> 
+                    <span class="glyphicon glyphicon-menu-left"></span>
+            </div>
+            <span></span>
+            <div class="s-buttn s-date">4</div>
+            <span></span>
+            <div class="s-buttn s-nowday">4-january</div>
+            <span></span>
+            <div class="s-buttn s-date">5</div>
+            <span></span>
+            <div class="s-buttn"> 
+                    <span class="glyphicon glyphicon-menu-right"></span>
+            </div>
+             
+        </div>
+    </section>
 
+    <footer></footer>
+   
+    <a href="#" class="up-button">
+        <span class="glyphicon glyphicon-menu-up"></span>
+    </a>
+    <script src="js/photo.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/jquery-3.2.0.js"></script>
 </body>
 </html>
