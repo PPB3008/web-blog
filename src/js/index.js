@@ -37,7 +37,7 @@ function myaddEvent(element,event,listener){
       textClear:function (){
         for(let i in blogObj){
         this.content[i]=`
-        <div class="blog-item" > 
+        <a href="#" class="blog-item" > 
         <div class="blog-item-content">
         
          <h2>${blogObj[i].title}</h2>
@@ -58,7 +58,7 @@ function myaddEvent(element,event,listener){
           </div>
 
         </div>
-        </div>
+        </a>
         `;     
    }
    this.addArticle();
@@ -76,14 +76,8 @@ function scrollTop(){
 window.onload=function(){
   ArticleOP.textClear();
   scrollTop();
-  clock();
+ // photoOP.photoClear();
+ clock2(5);
 }
 
 
-
-
-
-   /*
-
- let jsonData=JSON.parse(blogObj);
-         console.log(jsonData.content[1]);*/

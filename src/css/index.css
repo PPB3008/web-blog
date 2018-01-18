@@ -1,7 +1,6 @@
 html,body{
    margin: 0;
    padding: 0;
-  /* font-family: 微软雅黑;*/
 }
 
 ul,li{
@@ -12,6 +11,7 @@ ul,li{
 
 a{
     text-decoration: none;
+    
 }
 
 .nav{
@@ -327,24 +327,69 @@ a{
     bottom:10%;
     background-color: black;
     border-radius: .5rem;
+    transition: .1s ease-in 0s;
 }
 .glyphicon-menu-up{
     padding: 1.5rem;
     color: white;
 }
 
+.up-button:hover{
+    opacity: .8;
+}
 
-.photo-roll{
-    height: 300px;
-    width: 300px;
-    /*background-image:url("../img/48657428_p0.jpg"); 
-    /*opacity: .4;*/
-   /*transition: 4s ease-in;*/
-    animation:animation1 5s  0s;
-    animation-iteration-count: 1;
+.photo-show{
+    display: flex;
+    width: 100%;
+}
+
+.photo-roll{   
+    display: block;
+    height: 30rem;
+    width: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.photo-my{
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.footer{
+    height: 20rem;
+    width: 100%;
+    background-color: #31e2d8;
+}
+
+.commu{
+    width: 50%;
+    float: right;
+    border-left:2px solid white;
+    height: 80%; 
+}
+
+.commu form{
+    float: right;
+}
+
+.commu input{
+   border: 0;
+   padding: 1rem 1rem;
+}
+.commu button{
+    background-color: white;
+    border: 0;
+    padding: 1rem;
+    transition: .1s ease-in 0s;
 }
 
 
+
+.commu  button:hover{
+    background-color: gray;
+   
+}
 @keyframes animation1{
     0%{opacity: 0}
     40%{opacity: 1}
